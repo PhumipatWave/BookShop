@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLitePCLRaw.bundle_winsqlite3" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookLibrary\BookLibrary.csproj" />
+    <ProjectReference Include="..\CustomerLibrary\CustomerLibrary.csproj" />
+    <ProjectReference Include="..\TransactionLibrary\TransactionLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
